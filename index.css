@@ -1,0 +1,61 @@
+﻿
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.qtext {
+    margin-top: 75px;
+    margin-bottom: 5px;
+}
+
+.custom-button{
+    font-family: "Segoe UI";
+    font-size: x-large;
+    padding: 10px;
+    border-radius: 3px;
+    border: solid 1px saddlebrown;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-bottom: 600px;
+    margin-top: auto;
+    text-decoration: none;
+}
+.custom-select {
+    font-family: "Segoe UI";
+    font-size: x-large;
+    padding: 10px;
+    border-radius: 3px;
+    border: solid 1px saddlebrown;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    text-decoration: none;
+}
+.bodything {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    font-family: "Segoe UI";
+    text-align: center;
+    margin-inline: auto;
+    align-content: center;
+    color: saddlebrown;
+    background: burlywood;
+}
+.bottomtext {
+    display: inline-block;
+    height: 100%;
+    vertical-align: bottom;
+    width: auto;
+}

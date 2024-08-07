@@ -1,0 +1,1 @@
+﻿document.getElementById("playanother").addEventListener('click', function(){window.location.replace("./index.html");});
