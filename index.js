@@ -40,11 +40,13 @@
     "39": {"question":"How spacesick did you get?", "answer":"garn"},
     "40": {"question":"How hot was the pepper?", "answer":"scoville"}
 }
+const questionArray = Object.values(questions);
 const dropdown = document.getElementById("dropdown");
 let currentAnswer = "";
+let score = 0;
+var randInt; 
 function newQuestion() {
-    const questionArray = Object.values(questions);
-    const randInt = Math.round(Math.random() * (questionArray.length - 1));
+    randInt = Math.round(Math.random() * (questionArray.length - 1));
     const questionElement = document.getElementById("question");
     const question= document.createTextNode(questionArray[randInt].question);
     currentAnswer = questionArray[randInt].answer;
@@ -52,11 +54,16 @@ function newQuestion() {
 }
 
 function winThing() {
-    window.location.replace("./win.html");
+    score += 1;
+    document.getElementById("score").innerHTML = score;
+    document.getElementById("dropdown").value = "";
+    questionArray.splice(randInt, 1);
+    newQuestion()
 }
 
 function loseThing() {
-    window.location.replace("./lose.html");
+    const parseString = "?score=" + String(score) + "&answer=" + currentAnswer;
+    window.location.replace("./lose.html" + parseString);
 }
 function checkAnswer() {
     if (currentAnswer === dropdown.value) {

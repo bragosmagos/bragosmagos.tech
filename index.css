@@ -9,8 +9,19 @@ button {
 }
 
 .qtext {
-    margin-top: 75px;
+    font-family: "Segoe UI";
+    margin-inline: auto;
+    margin-top: 5px;
     margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 3px;
+    border: solid 1px saddlebrown;
+    width: fit-content;
+}
+.top {
+    font-family: "Segoe UI";
+    display: grid;
+    grid-template-columns: 1fr 25fr;
 }
 
 .custom-button{
@@ -24,7 +35,6 @@ button {
     cursor: pointer;
     margin-left: 2px;
     margin-right: 2px;
-    margin-bottom: 600px;
     margin-top: auto;
     text-decoration: none;
 }
