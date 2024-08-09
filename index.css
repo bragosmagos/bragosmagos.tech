@@ -38,7 +38,7 @@ button {
     margin-top: auto;
     text-decoration: none;
 }
-.custom-select {
+.custom-dropdown-input {
     font-family: "Segoe UI";
     font-size: x-large;
     padding: 10px;
@@ -52,6 +52,7 @@ button {
     margin-bottom: 2px;
     text-decoration: none;
 }
+
 .bodything {
     height: 100%;
     width: 100%;
