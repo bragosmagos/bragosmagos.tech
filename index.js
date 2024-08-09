@@ -45,18 +45,6 @@ const dropdown = document.getElementById("dropdown");
 let currentAnswer = "";
 let score = 0;
 var randInt;
-
-document.getElementById("dropdown").onfocus = function () {
-    document.getElementById("units").style.display = 'block';
-    document.getElementById("dropdown").style.borderRadius = "5px 5px 0 0";
-};
-for (let option of document.getElementById("units").options) {
-    option.onclick = function () {
-        document.getElementById("dropdown").value = option.value;
-        document.getElementById("units").style.display = 'none';
-        document.getElementById("dropdown").style.borderRadius = "5px";
-    }
-};
 function newQuestion() {
     randInt = Math.round(Math.random() * (questionArray.length - 1));
     const questionElement = document.getElementById("question");
